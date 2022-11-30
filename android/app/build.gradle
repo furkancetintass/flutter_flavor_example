@@ -51,19 +51,18 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     flavorDimensions "app"
     productFlavors {
- 
-        app1 {
+        dev {
             dimension "app"
             applicationId "com.example.flutter_flavor_example_test"
             versionCode 1
             versionName "1.0"
         }
- 
-        app2 {
+        prod {
             dimension "app"
             applicationId "com.example.flutter_flavor_example_prod"
             versionCode 1
